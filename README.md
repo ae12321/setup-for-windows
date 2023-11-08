@@ -43,3 +43,29 @@ https://qiita.com/hmmrjn/items/60d2a64c9e5bf7c0fe60
 
 
 ```
+
+
+# custom powershell 
+```
+
+# このシステムではスクリプトの実行が無効になっているため、～発生時
+https://qiita.com/ponsuke0531/items/4629626a3e84bcd9398f
+
+# 実行可能
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+# 元に戻すとき
+Set-ExecutionPolicy -ExecutionPolicy Restricted
+
+
+mkdir $env:USERPROFILE\Documents\WindowsPowerShell
+cd $env:USERPROFILE\Documents\WindowsPowerShell
+New-Item -ItemType File Microsoft.PowerShell_profile.ps1
+
+
+### Microsoft.PowerShell_profile.ps1
+
+
+
+
+
+```
